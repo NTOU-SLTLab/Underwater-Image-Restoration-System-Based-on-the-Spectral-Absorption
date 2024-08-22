@@ -1,3 +1,4 @@
+參考自
 Hierarchical Regression Network for Spectral Reconstruction from RGB Images
 https://github.com/zhaoyuzhi/Hierarchical-Regression-Network-for-Spectral-Reconstruction-from-RGB-Images
 
@@ -6,6 +7,7 @@ https://github.com/zhaoyuzhi/Hierarchical-Regression-Network-for-Spectral-Recons
 1.影像光譜重建：test1.py程式原始碼
 python test1.py --val_path "D:/11053022/20231127/Hierarchical/0410/0417_ref_mat" --baseroot "D:/11053022/20231127/Hierarchical/0410/0417_ref"
 使用Hierarchical Regression Network技術，將標準RGB影像轉換為高光譜數據。此技術通過四層層級回歸網路（HRNet），分別處理影像的低頻和高頻訊息，最終合併成一個高光譜影像，涵蓋31個不同波長的光譜通道。
+模型載點: https://drive.google.com/drive/folders/1LRrdfOR5LfX-D3XP7CoiGqt6Ci-MY5dr?usp=drive_link
 
 2.水下影像水深估測：01_L.py
 透過已知深度數據，利用波長500nm處的光譜強度差異進行水深估算。
@@ -28,5 +30,6 @@ attenuation
 將補償後的光譜數據映射到RGB空間，利用基於CIE 1964標準色度的相機響應函數和數學算法進行轉換。考慮每個波長的光強度和色彩平衡，以生成真實反映原始水下環境的RGB影像。
 輸出的資料夾為
 attenuation_img
+
 
 
